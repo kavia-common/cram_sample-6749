@@ -6,5 +6,5 @@ docker run --privileged=true \
            -v "$PWD:/workspace" \
            --network host \
            -w /workspace \
-           prplos-testbed \
+           cram-testbed \
            ./sample_cram/cram.sh
