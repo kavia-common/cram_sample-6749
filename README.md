@@ -9,7 +9,7 @@
 0.build dock image (First)
   "
   cd ./testbed/
-  docker build -t prplos-testbed .
+  docker build -t cram-testbed .
   "
 
 1. load test fw to DUT
