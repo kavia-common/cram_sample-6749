@@ -1,0 +1,4 @@
+run_check: python3 -m cram --verbose ./sample_case/iptable/20-iptables-port-forward.t | FAILED! (status: 2)
+run_check: python3 -m cram --verbose ./sample_case/iptables/20-iptables-port-forward.t | FAILED! (status: 1)
+run_check: python3 -m cram --verbose ./sample_case/iptables/22-iptables-rate-limit.t | FAILED! (status: 1)
+run_check: python3 -m cram --verbose ./sample_case/03-sample3.t | FAILED! (status: 1)

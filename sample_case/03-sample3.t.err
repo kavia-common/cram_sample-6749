@@ -24,6 +24,8 @@ network lan ip apply 192.168.2.1
   $ R "/etc/init.d/network restart > /dev/null 2>&1 &"
   $ sleep 60
   $ sudo ip addr add 192.168.2.50/24 dev ${INTERFACE}
+  Command line is not complete. Try option "help"
+  [255]
   $ ssh -o StrictHostKeychecking=no root@192.168.2.1 ls > /dev/null 2>&1
   $ CRAM_REMOTE_COMMAND2="ssh root@192.168.2.1"
   $ alias R="${CRAM_REMOTE_COMMAND2:-}"
@@ -36,6 +38,8 @@ network lan ip apply 192.168.1.1
   $ R "/etc/init.d/network restart > /dev/null 2>&1 &"
   $ sleep 60
   $ sudo ip addr add 192.168.1.50/24 dev ${INTERFACE}
+  Command line is not complete. Try option "help"
+  [255]
   $ ssh -o StrictHostKeychecking=no root@192.168.1.1 ls > /dev/null 2>&1
   $ CRAM_REMOTE_COMMAND2="ssh root@192.168.1.1"
   $ alias R="${CRAM_REMOTE_COMMAND2:-}"

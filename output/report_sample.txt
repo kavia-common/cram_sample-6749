@@ -1,6 +1,22 @@
-sample_case/01-sample.t: passed
-sample_case/02-sample2.t: passed
-# Ran 2 tests, 0 skipped, 0 failed.
-sample_case/01-sample.t: passed
-sample_case/02-sample2.t: passed
-# Ran 2 tests, 0 skipped, 0 failed.
+sample_case/03-sample3.t: failed
+--- sample_case/03-sample3.t
++++ sample_case/03-sample3.t.err
+@@ -24,6 +24,8 @@
+   $ R "/etc/init.d/network restart > /dev/null 2>&1 &"
+   $ sleep 60
+   $ sudo ip addr add 192.168.2.50/24 dev ${INTERFACE}
++  Command line is not complete. Try option "help"
++  [255]
+   $ ssh -o StrictHostKeychecking=no root@192.168.2.1 ls > /dev/null 2>&1
+   $ CRAM_REMOTE_COMMAND2="ssh root@192.168.2.1"
+   $ alias R="${CRAM_REMOTE_COMMAND2:-}"
+@@ -36,6 +38,8 @@
+   $ R "/etc/init.d/network restart > /dev/null 2>&1 &"
+   $ sleep 60
+   $ sudo ip addr add 192.168.1.50/24 dev ${INTERFACE}
++  Command line is not complete. Try option "help"
++  [255]
+   $ ssh -o StrictHostKeychecking=no root@192.168.1.1 ls > /dev/null 2>&1
+   $ CRAM_REMOTE_COMMAND2="ssh root@192.168.1.1"
+   $ alias R="${CRAM_REMOTE_COMMAND2:-}"
+# Ran 1 tests, 0 skipped, 1 failed.

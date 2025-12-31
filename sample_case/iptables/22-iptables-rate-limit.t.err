@@ -15,12 +15,11 @@ Insert rate-limit rule (ICMP echo-request):
 Verify rule presence (normalized):
 
   $ R 'iptables -S INPUT 2>/dev/null | grep -E -- "-p icmp .*--icmp-type echo-request .* -m limit .* --limit .* --limit-burst .* -j ACCEPT" | sed "s/[[:space:]]\\+/ /g" | sort | uniq'
-  -A INPUT * -p icmp * --icmp-type echo-request * -m limit * --limit * --limit-burst * -j ACCEPT
 
 Show header line deterministically:
 
   $ R 'iptables -L INPUT -n -v 2>/dev/null | sed "s/[[:space:]]\\+/ /g" | sed -n "1p" || echo missing'
-  Chain INPUT (policy * (glob)
+  Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
 
 Cleanup:
 
