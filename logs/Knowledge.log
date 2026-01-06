@@ -1,0 +1,282 @@
+2026-01-06 05:29:48,960 - Knowledge - INFO - Created shared MongoDB connection pool
+2026-01-06 05:29:49,285 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2026-01-06 05:29:49,487 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2026-01-06 05:29:49,660 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=10, max_concurrent_llm_calls=50
+2026-01-06 05:29:51,203 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-01-06 05:29:51,390 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2026-01-06 05:29:51,548 - Knowledge - INFO - load persisted knowledge: begin
+2026-01-06 05:29:51,696 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2026-01-06 05:29:51,846 - Knowledge - INFO - load persisted knowledge: end
+2026-01-06 05:29:51,983 - Knowledge - WARNING - No persisted knowledge found. Files will be queued during start()
+2026-01-06 05:29:52,197 - Knowledge - INFO - Redis support added with prefix knowledge:b9043dp:
+2026-01-06 05:29:52,390 - Knowledge - INFO - Starting knowledge initialization for ID: fbDMHC-b9043dp
+2026-01-06 05:29:52,551 - Knowledge - INFO - 🔍 Checking Redis for build_id: b9043dp
+2026-01-06 05:29:52,719 - Knowledge - INFO - 🔍 Full session ID: fbDMHC-b9043dp
+2026-01-06 05:29:52,905 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b9043dp:
+2026-01-06 05:29:53,088 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2026-01-06 05:29:53,275 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-01-06 05:29:53,431 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b9043dp
+2026-01-06 05:29:53,624 - Knowledge - WARNING - ❌ No Redis cache found
+2026-01-06 05:29:53,804 - Knowledge - INFO - 📁 Loading knowledge from disk...
+2026-01-06 05:29:53,996 - Knowledge - INFO - load persisted docinfo: begin
+2026-01-06 05:29:54,140 - Knowledge - INFO - load persisted docinfo: end
+2026-01-06 05:29:54,321 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-01-06 05:29:54,510 - Knowledge - INFO - ✅ load_from_redis method found - attempting Redis load
+2026-01-06 05:29:54,721 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-01-06 05:29:54,904 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b9043dp
+2026-01-06 05:29:55,079 - Knowledge - WARNING - ❌ No Redis cache found
+2026-01-06 05:29:55,270 - Knowledge - INFO - ❌ Redis load returned False - falling back to file loading
+2026-01-06 05:29:55,443 - Knowledge - INFO - load persisted knowledge: begin
+2026-01-06 05:29:55,665 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2026-01-06 05:29:55,856 - Knowledge - INFO - load persisted knowledge: end
+2026-01-06 05:29:56,018 - Knowledge - INFO - 📁 Disk load complete in 2.07s
+2026-01-06 05:29:56,219 - Knowledge - INFO - Populating ingest queue with source files...
+2026-01-06 05:29:56,417 - Knowledge - INFO - Added 37 files from /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749 to ingest queue
+2026-01-06 05:29:56,603 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 159, Duration: 0ms
+2026-01-06 05:29:56,761 - Knowledge - INFO - Worker kw1 created using shared MongoDB connection pool
+2026-01-06 05:29:56,912 - Knowledge - INFO - knowledge worker kw1 start
+2026-01-06 05:29:56,914 - Knowledge - INFO - Worker kw2 created using shared MongoDB connection pool
+2026-01-06 05:29:57,124 - Knowledge - INFO - [kw1] Queue=37, InProgress=0, PendingWorkers=0/1, Completed=0/37 (0.0%)
+2026-01-06 05:29:57,211 - Knowledge - INFO - knowledge worker kw2 start
+2026-01-06 05:29:57,212 - Knowledge - INFO - Worker kw3 created using shared MongoDB connection pool
+2026-01-06 05:29:57,280 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=37, active_workers=0/2
+2026-01-06 05:29:57,412 - Knowledge - INFO - [kw2] Queue=37, InProgress=0, PendingWorkers=0/2, Completed=0/37 (0.0%)
+2026-01-06 05:29:57,532 - Knowledge - INFO - knowledge worker kw3 start
+2026-01-06 05:29:57,533 - Knowledge - INFO - Worker kw4 created using shared MongoDB connection pool
+2026-01-06 05:29:57,607 - Knowledge - INFO - Worker kw1 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_cram/cram.sh
+2026-01-06 05:29:57,687 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=37, active_workers=1/3
+2026-01-06 05:29:57,771 - Knowledge - INFO - [kw3] Queue=33, InProgress=0, PendingWorkers=1/3, Completed=0/37 (0.0%)
+2026-01-06 05:29:57,867 - Knowledge - INFO - knowledge worker kw4 start
+2026-01-06 05:29:57,867 - Knowledge - INFO - Worker kw5 created using shared MongoDB connection pool
+2026-01-06 05:29:57,961 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_cram/cram.sh (ext=.sh, size=967)
+2026-01-06 05:29:58,055 - Knowledge - INFO - Worker kw2 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/45-iptables-hairpin-nat.t
+2026-01-06 05:29:58,142 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=33, active_workers=2/4
+2026-01-06 05:29:58,297 - Knowledge - INFO - [kw4] Queue=29, InProgress=0, PendingWorkers=2/4, Completed=0/37 (0.0%)
+2026-01-06 05:29:58,393 - Knowledge - INFO - knowledge worker kw5 start
+2026-01-06 05:29:58,393 - Knowledge - INFO - Worker kw6 created using shared MongoDB connection pool
+2026-01-06 05:29:58,489 - Knowledge - INFO - Worker kw1 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/output/report_sample.txt
+2026-01-06 05:29:58,611 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/45-iptables-hairpin-nat.t (ext=.t, size=1766)
+2026-01-06 05:29:58,687 - Knowledge - INFO - Worker kw3 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/37-iptables-nat-masquerade.t
+2026-01-06 05:29:58,757 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=29, active_workers=3/5
+2026-01-06 05:29:58,829 - Knowledge - INFO - [kw5] Queue=25, InProgress=0, PendingWorkers=3/5, Completed=0/37 (0.0%)
+2026-01-06 05:29:58,951 - Knowledge - INFO - knowledge worker kw6 start
+2026-01-06 05:29:58,952 - Knowledge - INFO - Worker kw7 created using shared MongoDB connection pool
+2026-01-06 05:29:59,027 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/output/report_sample.txt (ext=.txt, size=865)
+2026-01-06 05:29:59,132 - Knowledge - INFO - Worker kw2 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/22-iptables-rate-limit.t
+2026-01-06 05:29:59,197 - Knowledge - INFO - Worker kw3 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/36-iptables-counters-format.t
+2026-01-06 05:29:59,284 - Knowledge - INFO - Worker kw4 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/21-iptables-custom-rule-persist.t
+2026-01-06 05:29:59,408 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=25, active_workers=4/6
+2026-01-06 05:29:59,523 - Knowledge - INFO - [kw6] Queue=21, InProgress=0, PendingWorkers=4/6, Completed=0/37 (0.0%)
+2026-01-06 05:29:59,586 - Knowledge - INFO - knowledge worker kw7 start
+2026-01-06 05:29:59,586 - Knowledge - INFO - Worker kw8 created using shared MongoDB connection pool
+2026-01-06 05:29:59,690 - Knowledge - INFO - Worker kw1 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/44-ip6tables-basic.t
+2026-01-06 05:29:59,766 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/22-iptables-rate-limit.t (ext=.t, size=1152)
+2026-01-06 05:29:59,844 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/36-iptables-counters-format.t (ext=.t, size=449)
+2026-01-06 05:29:59,916 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/21-iptables-custom-rule-persist.t (ext=.t, size=1504)
+2026-01-06 05:30:00,022 - Knowledge - INFO - Worker kw5 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/20-iptables-port-forward.t
+2026-01-06 05:30:00,117 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=21, active_workers=5/7
+2026-01-06 05:30:00,192 - Knowledge - INFO - [kw7] Queue=17, InProgress=0, PendingWorkers=5/7, Completed=0/37 (0.0%)
+2026-01-06 05:30:00,257 - Knowledge - INFO - knowledge worker kw8 start
+2026-01-06 05:30:00,257 - Knowledge - INFO - Worker kw9 created using shared MongoDB connection pool
+2026-01-06 05:30:00,373 - Knowledge - INFO - Worker kw1 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/34-iptables-raw-notrack.t
+2026-01-06 05:30:00,438 - Knowledge - INFO - Worker kw2 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/19-iptables-forward-policy.t
+2026-01-06 05:30:00,517 - Knowledge - INFO - Worker kw3 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/38-iptables-port-forward.t
+2026-01-06 05:30:00,588 - Knowledge - INFO - Worker kw4 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/31-iptables-input-policy.t
+2026-01-06 05:30:00,676 - Knowledge - INFO - Worker kw5 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/43-iptables-custom-chains.t
+2026-01-06 05:30:00,744 - Knowledge - INFO - Worker kw6 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/40-iptables-state-rules.t
+2026-01-06 05:30:00,825 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=17, active_workers=6/8
+2026-01-06 05:30:00,928 - Knowledge - INFO - [kw8] Queue=13, InProgress=0, PendingWorkers=6/8, Completed=0/37 (0.0%)
+2026-01-06 05:30:00,996 - Knowledge - INFO - knowledge worker kw9 start
+2026-01-06 05:30:00,996 - Knowledge - INFO - Worker kw10 created using shared MongoDB connection pool
+2026-01-06 05:30:01,096 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/34-iptables-raw-notrack.t (ext=.t, size=748)
+2026-01-06 05:30:01,217 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/19-iptables-forward-policy.t (ext=.t, size=1516)
+2026-01-06 05:30:01,291 - Knowledge - INFO - Worker kw3 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/42-iptables-mangle-qos.t
+2026-01-06 05:30:01,368 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/31-iptables-input-policy.t (ext=.t, size=660)
+2026-01-06 05:30:01,458 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/43-iptables-custom-chains.t (ext=.t, size=1661)
+2026-01-06 05:30:01,578 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/40-iptables-state-rules.t (ext=.t, size=985)
+2026-01-06 05:30:01,645 - Knowledge - INFO - Worker kw7 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/10-wireless-bringup.t
+2026-01-06 05:30:01,725 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=13, active_workers=7/9
+2026-01-06 05:30:01,795 - Knowledge - INFO - [kw9] Queue=9, InProgress=0, PendingWorkers=7/9, Completed=0/37 (0.0%)
+2026-01-06 05:30:01,876 - Knowledge - INFO - knowledge worker kw10 start
+2026-01-06 05:30:01,876 - Knowledge - INFO - Worker kw11 created using shared MongoDB connection pool
+2026-01-06 05:30:01,974 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/44-ip6tables-basic.t (small file (2094 bytes))
+2026-01-06 05:30:02,046 - Knowledge - INFO - Worker kw2 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/23-iptables-logging.t
+2026-01-06 05:30:02,130 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/42-iptables-mangle-qos.t (ext=.t, size=1285)
+2026-01-06 05:30:02,195 - Knowledge - INFO - Worker kw4 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/18-iptables-nat-masquerade.t
+2026-01-06 05:30:02,300 - Knowledge - INFO - Worker kw5 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/33-iptables-ipset-match.t
+2026-01-06 05:30:02,415 - Knowledge - INFO - Worker kw6 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/30-iptables-save-restore.t
+2026-01-06 05:30:02,530 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/10-wireless-bringup.t (ext=.t, size=1566)
+2026-01-06 05:30:02,604 - Knowledge - INFO - Worker kw8 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/13-lan-dhcp-lease.t
+2026-01-06 05:30:02,709 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=9, active_workers=8/10
+2026-01-06 05:30:02,779 - Knowledge - INFO - [kw10] Queue=5, InProgress=0, PendingWorkers=8/10, Completed=0/37 (0.0%)
+2026-01-06 05:30:02,850 - Knowledge - INFO - Worker kw12 created using shared MongoDB connection pool
+2026-01-06 05:30:02,850 - Knowledge - INFO - knowledge worker kw11 start
+2026-01-06 05:30:02,943 - Knowledge - INFO - Processing batch of 4 files
+2026-01-06 05:30:03,015 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/23-iptables-logging.t (ext=.t, size=1077)
+2026-01-06 05:30:03,106 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/37-iptables-nat-masquerade.t (small file (2513 bytes))
+2026-01-06 05:30:03,254 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/18-iptables-nat-masquerade.t (ext=.t, size=1616)
+2026-01-06 05:30:03,328 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/33-iptables-ipset-match.t (ext=.t, size=1235)
+2026-01-06 05:30:03,438 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/30-iptables-save-restore.t (ext=.t, size=1103)
+2026-01-06 05:30:03,546 - Knowledge - INFO - Worker kw7 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/01-sample.t
+2026-01-06 05:30:03,624 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/13-lan-dhcp-lease.t (ext=.t, size=712)
+2026-01-06 05:30:03,690 - Knowledge - INFO - Worker kw9 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/03-sample3.t
+2026-01-06 05:30:03,766 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=5, active_workers=9/11
+2026-01-06 05:30:03,839 - Knowledge - INFO - knowledge worker kw12 start
+2026-01-06 05:30:03,839 - Knowledge - INFO - Worker kw13 created using shared MongoDB connection pool
+2026-01-06 05:30:03,922 - Knowledge - INFO - [kw11] Queue=1, InProgress=0, PendingWorkers=9/12, Completed=4/37 (10.8%)
+2026-01-06 05:30:04,014 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_cram/cram.sh
+2026-01-06 05:30:04,088 - Knowledge - INFO - Processing batch of 4 files
+2026-01-06 05:30:04,207 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/38-iptables-port-forward.t (small file (2038 bytes))
+2026-01-06 05:30:04,274 - Knowledge - INFO - Worker kw4 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/32-iptables-mangle-mark.t
+2026-01-06 05:30:04,377 - Knowledge - INFO - Worker kw5 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/35-iptables-owner-match.t
+2026-01-06 05:30:04,478 - Knowledge - INFO - Worker kw6 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/39-iptables-forward-interlan.t
+2026-01-06 05:30:04,609 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/01-sample.t (ext=.t, size=428)
+2026-01-06 05:30:04,719 - Knowledge - INFO - Worker kw8 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/14-firewall-basic-rules.t
+2026-01-06 05:30:04,834 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/03-sample3.t (ext=.t, size=1472)
+2026-01-06 05:30:04,960 - Knowledge - INFO - Worker kw10 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/run_cram_test.sh
+2026-01-06 05:30:05,034 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 267, Duration: 0ms
+2026-01-06 05:30:05,154 - Knowledge - INFO - knowledge worker kw13 start
+2026-01-06 05:30:05,155 - Knowledge - INFO - Worker kw14 created using shared MongoDB connection pool
+2026-01-06 05:30:05,234 - Knowledge - INFO - Batch sizing: calculated=1, max_allowed=10, queue=1, active_workers=10/13
+2026-01-06 05:30:05,344 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/output/report_sample.txt
+2026-01-06 05:30:05,424 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/45-iptables-hairpin-nat.t
+2026-01-06 05:30:05,586 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/32-iptables-mangle-mark.t (ext=.t, size=1105)
+2026-01-06 05:30:05,683 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/35-iptables-owner-match.t (ext=.t, size=987)
+2026-01-06 05:30:05,752 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/39-iptables-forward-interlan.t (ext=.t, size=1650)
+2026-01-06 05:30:05,819 - Knowledge - INFO - Worker kw7 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/12-wan-ip-connectivity.t
+2026-01-06 05:30:05,899 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/14-firewall-basic-rules.t (ext=.t, size=744)
+2026-01-06 05:30:05,981 - Knowledge - INFO - Worker kw9 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/17-log-ubus-events.t
+2026-01-06 05:30:06,065 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/run_cram_test.sh (ext=.sh, size=249)
+2026-01-06 05:30:06,175 - Knowledge - INFO - Processing batch of 4 files
+2026-01-06 05:30:06,175 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 1140ms
+2026-01-06 05:30:06,384 - Knowledge - INFO - knowledge worker kw14 start
+2026-01-06 05:30:06,393 - Knowledge - INFO - Worker kw15 created using shared MongoDB connection pool
+2026-01-06 05:30:06,636 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/44-ip6tables-basic.t
+2026-01-06 05:30:06,727 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/22-iptables-rate-limit.t
+2026-01-06 05:30:06,884 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/20-iptables-port-forward.t (small file (2080 bytes))
+2026-01-06 05:30:06,961 - Knowledge - INFO - Worker kw6 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/41-iptables-wan-logging.t
+2026-01-06 05:30:07,047 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/12-wan-ip-connectivity.t (ext=.t, size=932)
+2026-01-06 05:30:07,105 - Knowledge - INFO - Worker kw8 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/02-sample2.t
+2026-01-06 05:30:07,193 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/17-log-ubus-events.t (ext=.t, size=759)
+2026-01-06 05:30:07,354 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/37-iptables-nat-masquerade.t
+2026-01-06 05:30:07,437 - Knowledge - INFO - Progress: 21.6% | Files: 17/37 | Rate: 1.05 files/sec | Queue: 0
+2026-01-06 05:30:07,437 - Knowledge - INFO - Processing batch of 4 files
+2026-01-06 05:30:07,438 - Knowledge - INFO - Processing batch of 1 files
+2026-01-06 05:30:07,597 - Knowledge - INFO - knowledge worker kw15 start
+2026-01-06 05:30:07,597 - Knowledge - INFO - Worker kw16 created using shared MongoDB connection pool
+2026-01-06 05:30:07,669 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/34-iptables-raw-notrack.t
+2026-01-06 05:30:07,745 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/19-iptables-forward-policy.t
+2026-01-06 05:30:07,916 - Knowledge - INFO - Processing batch of 4 files
+2026-01-06 05:30:08,002 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/41-iptables-wan-logging.t (ext=.t, size=1742)
+2026-01-06 05:30:08,077 - Knowledge - INFO - Worker kw7 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/16-uci-set-commit-reload.t
+2026-01-06 05:30:08,192 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/02-sample2.t (ext=.t, size=498)
+2026-01-06 05:30:08,303 - Knowledge - INFO - Worker kw9 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/15-throughput-sanity-ping.t
+2026-01-06 05:30:08,392 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/36-iptables-counters-format.t
+2026-01-06 05:30:08,544 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/21-iptables-custom-rule-persist.t
+2026-01-06 05:30:08,661 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/run_cram_test.sh
+2026-01-06 05:30:08,743 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 268, Duration: 0ms
+2026-01-06 05:30:08,819 - Knowledge - INFO - knowledge worker kw16 start
+2026-01-06 05:30:08,819 - Knowledge - INFO - Worker kw17 created using shared MongoDB connection pool
+2026-01-06 05:30:09,071 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/23-iptables-logging.t
+2026-01-06 05:30:09,086 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/20-iptables-port-forward.t
+2026-01-06 05:30:09,254 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/16-uci-set-commit-reload.t (ext=.t, size=1134)
+2026-01-06 05:30:09,332 - Knowledge - INFO - Worker kw8 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/11-lan-vlan-config.t
+2026-01-06 05:30:09,433 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/15-throughput-sanity-ping.t (ext=.t, size=517)
+2026-01-06 05:30:09,541 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/38-iptables-port-forward.t
+2026-01-06 05:30:09,622 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/31-iptables-input-policy.t
+2026-01-06 05:30:09,852 - Knowledge - INFO - Processing batch of 4 files
+2026-01-06 05:30:09,853 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 1110ms
+2026-01-06 05:30:10,045 - Knowledge - INFO - knowledge worker kw17 start
+2026-01-06 05:30:10,047 - Knowledge - INFO - Worker kw18 created using shared MongoDB connection pool
+2026-01-06 05:30:10,208 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/43-iptables-custom-chains.t
+2026-01-06 05:30:10,410 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/11-lan-vlan-config.t (ext=.t, size=1173)
+2026-01-06 05:30:10,474 - Knowledge - INFO - Worker kw9 processing /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/README.md
+2026-01-06 05:30:10,552 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/42-iptables-mangle-qos.t
+2026-01-06 05:30:10,628 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/18-iptables-nat-masquerade.t
+2026-01-06 05:30:10,697 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/40-iptables-state-rules.t
+2026-01-06 05:30:10,762 - Knowledge - INFO - Progress: 56.8% | Files: 29/37 | Rate: 1.46 files/sec | Queue: 0
+2026-01-06 05:30:10,763 - Knowledge - INFO - Processing batch of 4 files
+2026-01-06 05:30:10,904 - Knowledge - INFO - knowledge worker kw18 start
+2026-01-06 05:30:10,905 - Knowledge - INFO - Worker kw19 created using shared MongoDB connection pool
+2026-01-06 05:30:10,981 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/33-iptables-ipset-match.t
+2026-01-06 05:30:11,095 - Knowledge - INFO - Processing batch of 4 files
+2026-01-06 05:30:11,163 - Knowledge - INFO - Fast-tracked /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/README.md (ext=.md, size=811)
+2026-01-06 05:30:11,341 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/32-iptables-mangle-mark.t
+2026-01-06 05:30:11,418 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/30-iptables-save-restore.t
+2026-01-06 05:30:11,580 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/10-wireless-bringup.t
+2026-01-06 05:30:11,740 - Knowledge - INFO - knowledge worker kw19 start
+2026-01-06 05:30:11,740 - Knowledge - INFO - Worker kw20 created using shared MongoDB connection pool
+2026-01-06 05:30:11,816 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/35-iptables-owner-match.t
+2026-01-06 05:30:11,910 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/13-lan-dhcp-lease.t
+2026-01-06 05:30:12,015 - Knowledge - INFO - Processing batch of 4 files
+2026-01-06 05:30:12,153 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/39-iptables-forward-interlan.t
+2026-01-06 05:30:12,239 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/01-sample.t
+2026-01-06 05:30:12,341 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 270, Duration: 0ms
+2026-01-06 05:30:12,400 - Knowledge - INFO - knowledge worker kw20 start
+2026-01-06 05:30:12,589 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/14-firewall-basic-rules.t
+2026-01-06 05:30:12,658 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/03-sample3.t
+2026-01-06 05:30:12,762 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/iptables/41-iptables-wan-logging.t
+2026-01-06 05:30:12,848 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/12-wan-ip-connectivity.t
+2026-01-06 05:30:12,889 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 548ms
+2026-01-06 05:30:13,049 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/02-sample2.t
+2026-01-06 05:30:13,150 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/17-log-ubus-events.t
+2026-01-06 05:30:13,346 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/16-uci-set-commit-reload.t
+2026-01-06 05:30:13,431 - Knowledge - INFO - Progress: 100.0% | Files: 37/37 | Rate: 1.58 files/sec | Queue: 0
+2026-01-06 05:30:13,517 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/11-lan-vlan-config.t
+2026-01-06 05:30:13,592 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/sample_case/15-throughput-sanity-ping.t
+2026-01-06 05:30:14,023 - Knowledge - INFO - process ingested knowledge for /app/data/gemtektechnologycoltd2546/6749/b9043dp/cram_sample-6749/README.md
+2026-01-06 05:30:14,603 - Knowledge - INFO - Knowledge creation complete
+2026-01-06 05:30:14,768 - Knowledge - INFO - ==================================================
+2026-01-06 05:30:15,181 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2026-01-06 05:30:15,392 - Knowledge - INFO - ==================================================
+2026-01-06 05:30:15,579 - Knowledge - INFO - Total processing time: 25.81 seconds (0.43 minutes)
+2026-01-06 05:30:15,765 - Knowledge - INFO - Files processed: 0
+2026-01-06 05:30:15,954 - Knowledge - INFO - Processing rate: 0.00 files/second
+2026-01-06 05:30:16,106 - Knowledge - INFO - 
+[TIME_BREAKDOWN]
+2026-01-06 05:30:16,258 - Knowledge - INFO - File Reading: 0.00s (0.0%)
+2026-01-06 05:30:16,413 - Knowledge - INFO - LLM Processing: 0.00s (0.0%)
+2026-01-06 05:30:16,563 - Knowledge - INFO - MongoDB Operations: 0.00s (0.0%)
+2026-01-06 05:30:16,768 - Knowledge - INFO - Redis Operations: 0.00s (0.0%)
+2026-01-06 05:30:16,970 - Knowledge - INFO - WebSocket Communication: 2.80s (10.8%)
+2026-01-06 05:30:17,192 - Knowledge - INFO - Other Overhead: 23.01s (89.2%)
+2026-01-06 05:30:17,344 - Knowledge - INFO - 
+[LLM_STATS]
+2026-01-06 05:30:17,515 - Knowledge - INFO - Total LLM calls: 0
+2026-01-06 05:30:17,727 - Knowledge - INFO - Average LLM response time: 0ms
+2026-01-06 05:30:17,917 - Knowledge - INFO - Average prompt tokens: 0.0
+2026-01-06 05:30:18,110 - Knowledge - INFO - Average completion tokens: 0.0
+2026-01-06 05:30:18,254 - Knowledge - INFO - Total prompt tokens: 0
+2026-01-06 05:30:18,409 - Knowledge - INFO - Total completion tokens: 0
+2026-01-06 05:30:18,615 - Knowledge - INFO - Total LLM cost: $0.0000
+2026-01-06 05:30:18,758 - Knowledge - INFO - 
+[DATABASE_STATS]
+2026-01-06 05:30:18,925 - Knowledge - INFO - MongoDB operations: 0
+2026-01-06 05:30:19,063 - Knowledge - INFO - Redis operations: 0
+2026-01-06 05:30:19,232 - Knowledge - INFO - 
+[COMMUNICATION_STATS]
+2026-01-06 05:30:19,417 - Knowledge - INFO - WebSocket messages sent: 7
+2026-01-06 05:30:19,579 - Knowledge - INFO - Average message size: 137.7 bytes
+2026-01-06 05:30:19,774 - Knowledge - INFO - 
+[WORKER_STATS]
+2026-01-06 05:30:19,936 - Knowledge - INFO - 
+[FILE_TYPE_STATS]
+2026-01-06 05:30:20,139 - Knowledge - INFO - 
+[SLOWEST_FILES]
+2026-01-06 05:30:20,321 - Knowledge - INFO - ==================================================
+2026-01-06 05:30:20,502 - Knowledge - INFO - ==================================================
+2026-01-06 05:30:20,665 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2026-01-06 05:30:20,857 - Knowledge - INFO - ==================================================
+2026-01-06 05:30:21,072 - Knowledge - INFO - Total processing time: 31.61 seconds (0.53 minutes)
+2026-01-06 05:30:21,249 - Knowledge - INFO - Files processed: 37 of 37
+2026-01-06 05:30:21,460 - Knowledge - INFO - Processing rate: 1.17 files/second
+2026-01-06 05:30:21,656 - Knowledge - INFO - WebSocket messages sent: 3
+2026-01-06 05:30:21,808 - Knowledge - INFO - MongoDB operations: 37
+2026-01-06 05:30:21,969 - Knowledge - INFO - Average MongoDB ops per file: 1.00
+2026-01-06 05:30:22,200 - Knowledge - INFO - LLM costs: $0.0000
+2026-01-06 05:30:22,407 - Knowledge - INFO - Prompt tokens: 0
+2026-01-06 05:30:22,574 - Knowledge - INFO - Completion tokens: 0
+2026-01-06 05:30:22,740 - Knowledge - INFO - Updating org costs, total cost: 0
+2026-01-06 05:30:23,524 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 267, Duration: 0ms
+2026-01-06 05:30:23,716 - Knowledge - INFO - Saving knowledge to Redis...
+2026-01-06 05:30:23,904 - Knowledge - INFO - Knowledge saved to Redis successfully
